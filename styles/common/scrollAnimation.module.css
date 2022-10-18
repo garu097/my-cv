@@ -1,0 +1,21 @@
+.button {
+    position: fixed;
+    bottom: 32px;
+    right: calc(50% - var(--max-width) / 2 - 40px);
+    width: 48px;
+    height: 48px;
+    transform: rotateX(180deg);
+    background: white;
+    border-radius: 50%;
+    transition: all ease 0.2ms;
+}
+
+.button img {
+    margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+    .button {
+        right: 32px;
+    }
+}

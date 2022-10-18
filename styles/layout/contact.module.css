@@ -1,0 +1,134 @@
+.content {
+    display: grid;
+    grid-template-columns: auto 37%;
+    gap: 32px;
+    margin-bottom: 80px;
+}
+
+.title {
+    margin: 36px 0;
+    font-size: 30px;
+}
+
+.form_content {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    margin: 40px 0;
+    padding: 80px 40px 40px;
+    background: rgb(255, 255, 255);
+    box-shadow: rgb(0 0 0 / 5%) 0px 0px 20px 0px;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 2;
+    border-radius: 8px;
+    gap: 30px 10px;
+}
+
+.group_input {
+    position: relative;
+    height: 200%;
+}
+
+.group_input_name,
+.group_input_email {
+    width: calc(50% - 5px);
+}
+
+.group_input_message {
+    width: 100%;
+}
+
+.form_label {
+    color: var(--second-black);
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 20px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    margin: auto;
+    pointer-events: none;
+    transition: all 0.4s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+    transform-origin: left center;
+}
+
+.form_input,
+.form_textarea {
+    margin-bottom: 10px;
+    width: 100%;
+    background-color: white;
+    color: var(--second-black);
+    outline: none;
+    border-bottom: 1px solid var(--second-black);
+    resize: none;
+}
+
+.form_input {
+    height: 40px;
+}
+
+.input_active + .form_label,
+.form_input:focus + .form_label,
+.form_textarea:focus + .form_label {
+    transform: translateY(-20px);
+    font-size: 16px;
+}
+
+.text_error {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    font-size: 14px;
+    color: red;
+}
+
+
+.button_submit {
+    min-width: 136px;
+    border: none;
+    border-radius: 44px;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    padding: 8px 40px;
+    flex: 0 1 0%;
+    outline: 0px;
+    height: 50px;
+    margin-left: auto;
+    background-color: var(--second-black);
+    font-family: Coolvetica_b, sans-serif;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+}
+
+.button_submit:disabled {
+    background: var(--color-disabled);
+}
+
+.message_sent {
+    color: black;
+    width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+    .content {
+        grid-template-columns: auto
+    }
+
+    .group_input_name,
+    .group_input_email {
+        width: 100%;
+    }
+}
+
+/* socials */
+.link_icon {
+    margin: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.link_icon span {
+    margin-left: 16px;
+}

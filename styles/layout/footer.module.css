@@ -1,0 +1,19 @@
+.container {
+    border-top: 1px solid white;
+    padding: 40px var(--space-horizontal);
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.paragraph {
+    font-size: 12px;
+    margin-left: auto;
+    margin-right: 16px;
+}
+
+.emphasize {
+    display: inline-block;
+    position: relative;
+    font-size: 16px;
+    font-weight: 700;
+}

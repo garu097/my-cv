@@ -1,0 +1,32 @@
+.item {
+    font-family: var(--second-font);
+}
+
+.title {
+    color: var(--second-black);
+    font-size: 24px;
+
+}
+
+.subtitle {
+    color: var(--color-subtitle);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.paragraph {
+    color: var(--second-black);
+    font-family: var(--second-font);
+}
+
+.date {
+    font-size: 20px;
+    color: black;
+    font-style: oblique;
+}
+
+@media screen and (max-width: 767px) {
+    .paragraph {
+        font-size: 16px !important;
+    }
+}

@@ -1,0 +1,119 @@
+.title {
+    text-align: center;
+}
+
+.content_section {
+    margin: 48px 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 32px;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.content_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content_favourite {
+    grid-column: 1 / -1;
+}
+
+.content_education {
+
+}
+
+.content_experience {
+
+}
+
+.content_title {
+    font-size: 28px;
+    text-align: center;
+}
+
+/* favourite */
+
+.favourite_container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 48px;
+    padding: 32px 0;
+}
+
+.favourite_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.favourite_title {
+    font-size: 20px;
+    display: inline-block;
+}
+
+.favourite_title::after {
+    content: "";
+    background-color: #fff;
+    display: block;
+    visibility: hidden;
+    width: 0;
+    height: 4px;
+    transform: rotate(-2deg);
+    transition: all ease-in-out 0.28s;
+    opacity: 1;
+}
+
+.favourite_item:hover .favourite_title::after {
+    visibility: visible;
+    width: 100%;
+    opacity: 0.8;
+}
+
+.favourite_icon {
+    display: block;
+    margin: 32px;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transition: all ease-in-out 0.28s;
+    object-fit: contain;
+}
+
+.favourite_item:hover .favourite_icon {
+    /*transform: rotateZ(360deg);*/
+    animation-name: vibrate;
+    animation-timing-function: ease;
+}
+
+@keyframes vibrate {
+    25% {
+        transform: rotateZ(20deg);
+    }
+
+    75% {
+        transform: rotateZ(-20deg);
+    }
+}
+
+.favourite_paragraph {
+    text-align: center;
+}
+
+
+@media screen and (max-width: 767px) {
+    .content_section {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    .favourite_container {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    .favourite_item {
+        margin: 16px 0;
+    }
+}
