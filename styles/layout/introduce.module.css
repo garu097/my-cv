@@ -13,6 +13,7 @@
 .introduce_text {
     font-size: 40px;
     text-align: center;
+    display: inline-block;
 }
 
 .introduce_paragraph {
