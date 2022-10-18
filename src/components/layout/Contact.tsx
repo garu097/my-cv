@@ -129,7 +129,8 @@ export function Contact(props: Props) {
                                 <label className={styles.form_label}>message</label>
                                 {isInvalid.message && <span className={styles.text_error}>Message is empty</span>}
                             </div>
-                            <button disabled={isDisableSubmit} className={styles.button_submit} type="submit">
+                            <button disabled={isDisableSubmit || isFetching} className={styles.button_submit}
+                                    type="submit">
                                 {isFetching ? <Spinner/> : 'Submit'}
                             </button>
 
