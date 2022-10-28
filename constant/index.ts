@@ -74,6 +74,10 @@ export const SKILLS = {
             NAME: 'ReactJs',
             PROGRESS: 80,
         },
+        NEXTJS: {
+            NAME: 'NextJS',
+            PROGRESS: 80,
+        },
         DJANGO: {
             NAME: 'Django',
             PROGRESS: 80,
