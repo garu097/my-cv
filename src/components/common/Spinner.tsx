@@ -1,9 +1,5 @@
-import styles from '@/styles/common/spinner.module.css';
+import styles from "@/styles/common/spinner.module.css";
 
-type Props = {};
-
-export function Spinner(props: Props) {
-    return (
-        <div className={styles.lds_dual_ring}></div>
-    );
+export function Spinner() {
+  return <div className={styles.lds_dual_ring}></div>;
 }

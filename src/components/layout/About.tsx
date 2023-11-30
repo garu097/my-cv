@@ -1,49 +1,66 @@
 import clsx from "clsx";
-import styles from '@/styles/layout/about.module.css';
-import {FAVOURITE, LIST_EDUCATION, LIST_EXPERIENCE, LIST_ITEM_NAVBAR, SIZE_ICON} from "@/constant";
-import {Timeline} from "../common/Timeline";
+import styles from "@/styles/layout/about.module.css";
+import {
+  FAVOURITE,
+  LIST_EDUCATION,
+  LIST_EXPERIENCE,
+  LIST_ITEM_NAVBAR,
+  SIZE_ICON,
+} from "@/src/constant";
+import { Timeline } from "../common/Timeline";
 import helper from "@/src/utils/helper";
-import {Fade} from "react-awesome-reveal";
+import { Fade } from "react-awesome-reveal";
 
+export function About() {
+  return (
+    <section id={LIST_ITEM_NAVBAR.ABOUT} className="container_section">
+      <h2 className={`${styles.title} title_section`}>About</h2>
+      {/* timeline */}
+      <Fade>
+        <div className={styles.content_section}>
+          <div className={styles.content_container}>
+            <h4 className={styles.content_title}>Education</h4>
+            <Timeline listTimeLine={LIST_EDUCATION} />
+          </div>
+          <div className={styles.content_container}>
+            <h4 className={styles.content_title}>Experience</h4>
+            <Timeline listTimeLine={LIST_EXPERIENCE} />
+          </div>
+        </div>
+      </Fade>
 
-type Props = {};
-
-export function About(props: Props) {
-    return (
-        <section id={LIST_ITEM_NAVBAR.ABOUT} className="container_section">
-            <h2 className={`${styles.title} title_section`}>About</h2>
-            {/* timeline */}
-            <Fade>
-                <div className={styles.content_section}>
-                    <div className={styles.content_container}>
-                        <h4 className={styles.content_title}>Education</h4>
-                        <Timeline listTimeLine={LIST_EDUCATION}/>
-                    </div>
-                    <div className={styles.content_container}>
-                        <h4 className={styles.content_title}>Experience</h4>
-                        <Timeline listTimeLine={LIST_EXPERIENCE}/>
-                    </div>
-                </div>
-            </Fade>
-
-
-            {/* favourite */}
-            <Fade className={styles.content_section}>
-                <div className={clsx(styles.content_container, styles.content_favourite)}>
-                    <h4 className={styles.content_title}>Favourite</h4>
-                    <div className={styles.favourite_container}>
-                        {Object.keys(FAVOURITE).map(key => <div key={key} className={styles.favourite_item}>
-                            <h4 className={styles.favourite_title}>{helper.capitalizeFirstLetter(key)}</h4>
-                            <img alt={key} style={{height: SIZE_ICON.LARGE.height, width: SIZE_ICON.LARGE.width}}
-                                 src={FAVOURITE[key].icon}
-                                 className={styles.favourite_icon}/>
-                            <p className={styles.favourite_paragraph} dangerouslySetInnerHTML={{
-                                __html: FAVOURITE[key].description
-                            }}/>
-                        </div>)}
-                    </div>
-                </div>
-            </Fade>
-        </section>
-    );
+      {/* favourite */}
+      <Fade className={styles.content_section}>
+        <div
+          className={clsx(styles.content_container, styles.content_favourite)}
+        >
+          <h4 className={styles.content_title}>Favourite</h4>
+          <div className={styles.favourite_container}>
+            {Object.keys(FAVOURITE).map((key) => (
+              <div key={key} className={styles.favourite_item}>
+                <h4 className={styles.favourite_title}>
+                  {helper.capitalizeFirstLetter(key)}
+                </h4>
+                <img
+                  alt={key}
+                  style={{
+                    height: SIZE_ICON.LARGE.height,
+                    width: SIZE_ICON.LARGE.width,
+                  }}
+                  src={FAVOURITE[key].icon}
+                  className={styles.favourite_icon}
+                />
+                <p
+                  className={styles.favourite_paragraph}
+                  dangerouslySetInnerHTML={{
+                    __html: FAVOURITE[key].description,
+                  }}
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </Fade>
+    </section>
+  );
 }
