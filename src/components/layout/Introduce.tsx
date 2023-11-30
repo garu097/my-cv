@@ -4,7 +4,7 @@ import {
   PARAGRAPH_INTRODUCE,
   TEXT_INTRODUCE_SEQUENCE,
 } from "@/src/constant";
-import styles from "@/styles/layout/introduce.module.css";
+import styles from "@/src/styles/layout/introduce.module.css";
 import { PulsatingAvatar } from "../common/PulsatingAvatar";
 import clsx from "clsx";
 import { Fade } from "react-awesome-reveal";

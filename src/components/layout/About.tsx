@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import styles from "@/styles/layout/about.module.css";
+import styles from "@/src/styles/layout/about.module.css";
 import {
   FAVOURITE,
   LIST_EDUCATION,

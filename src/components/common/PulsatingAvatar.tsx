@@ -1,4 +1,4 @@
-import styles from "@/styles/common/pulsatingAvatar.module.css";
+import styles from "@/src/styles/common/pulsatingAvatar.module.css";
 import Image from "next/image";
 
 export function PulsatingAvatar() {

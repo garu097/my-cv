@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import styles from "@/styles/common/progressInput.module.css";
+import styles from "@/src/styles/common/progressInput.module.css";
 import { motion } from "framer-motion";
 
 type Props = {

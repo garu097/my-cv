@@ -1,5 +1,5 @@
 import { LIST_ITEM_NAVBAR, SKILLS } from "@/src/constant";
-import styles from "@/styles/layout/skill.module.css";
+import styles from "@/src/styles/layout/skill.module.css";
 import { Fade } from "react-awesome-reveal";
 import ProgressInput from "@/src/components/common/ProgressInput";
 

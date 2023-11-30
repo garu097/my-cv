@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import styles from "@/styles/common/scrollAnimation.module.css";
+import styles from "@/src/styles/common/scrollAnimation.module.css";
 
 const ScrollButton = () => {
   const [visible, setVisible] = useState<boolean>(false);

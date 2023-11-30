@@ -1,6 +1,6 @@
 import { INFO_AUTHOR, LIST_ITEM_NAVBAR, SIZE_ICON } from "@/src/constant";
 import React, { useState } from "react";
-import styles from "@/styles/layout/contact.module.css";
+import styles from "@/src/styles/layout/contact.module.css";
 import { Fade } from "react-awesome-reveal";
 import helper from "@/src/utils/helper";
 import Image from "next/image";

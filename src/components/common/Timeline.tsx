@@ -3,7 +3,7 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import styles from "@/styles/common/timeline.module.css";
+import styles from "@/src/styles/common/timeline.module.css";
 import { ITimeLine } from "@/src/constant/type";
 
 type Props = {
