@@ -47,14 +47,7 @@ export const LIST_ITEM_NAVBAR: any = {
 };
 
 // introduce
-export const TEXT_INTRODUCE_SEQUENCE = [
-  "My name is Ha",
-  2000,
-  "I am a developer",
-  2000,
-  "Nice to see you",
-  2000,
-];
+export const TEXT_INTRODUCE_SEQUENCE = ["My name is Ha", 2000, "I am a developer", 2000, "Nice to see you", 2000];
 
 export const PARAGRAPH_INTRODUCE =
   "A hard worker <br/> who is adaptable and able to learn and<br/> use new technologies with ease. <br/>My main areas of expertise include <br/> Javascript, HTML, CSS and Python.";
@@ -113,17 +106,14 @@ export const LIST_EDUCATION: ITimeLine[] = [
     title: "Hanoi University of Science and Technology",
     date: "September 2016 - April 2021",
     subTitle: "Bachelor's Degree - Telecommunication electronic engineering",
-    paragraph:
-      "Studies included understanding of different algorithms and their implementation in practice.",
-    iconURL:
-      "https://upload.wikimedia.org/wikipedia/commons/a/a1/Logo_Hust.png",
+    paragraph: "Studies included understanding of different algorithms and their implementation in practice.",
+    iconURL: "https://upload.wikimedia.org/wikipedia/commons/a/a1/Logo_Hust.png",
   },
   {
     title: "Korean IT School",
     date: "April 2021 - November 2021",
     subTitle: "Web",
-    paragraph:
-      "Studies included fundamental programing software. Also an emphasis on algorithm",
+    paragraph: "Studies included fundamental programing software. Also an emphasis on algorithm",
     iconURL:
       "https://scontent.fhan2-1.fna.fbcdn.net/v/t1.6435-9/131303306_189965539427056_2614003248938763863_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=hRY0vuVxz0wAX_yQmuW&tn=j4CxX_qJ4TlXOnFb&_nc_ht=scontent.fhan2-1.fna&oh=00_AT-AcP8ozMa8mQDZ4HIXzpLwyRFI2fV_YPBCm_qkmhpKZQ&oe=636D6440",
   },
@@ -145,8 +135,7 @@ export const LIST_EXPERIENCE: ITimeLine[] = [
 export const FAVOURITE: IFavourite = {
   LEARNING: {
     icon: "/icons/icon-book.svg",
-    description:
-      "Exciting to learn new knowledge and technology to apply to work, not afraid of change",
+    description: "Exciting to learn new knowledge and technology to apply to work, not afraid of change",
   },
   GAME: {
     icon: "/icons/icon-gamepad.svg",
@@ -155,7 +144,6 @@ export const FAVOURITE: IFavourite = {
   },
   TRAVEL: {
     icon: "/icons/icon-umbrella-beach.svg",
-    description:
-      "Traveling introduces me to new cultures, new knowledge and cutting down on stress",
+    description: "Traveling introduces me to new cultures, new knowledge and cutting down on stress",
   },
 };

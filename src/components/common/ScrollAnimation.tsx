@@ -31,11 +31,7 @@ const ScrollButton = () => {
   }, []);
 
   return (
-    <button
-      className={styles.button}
-      style={{ display: visible ? "block" : "none" }}
-      onClick={scrollToTop}
-    >
+    <button className={styles.button} style={{ display: visible ? "block" : "none" }} onClick={scrollToTop}>
       <img alt="icon-chevons-down" src="/icons/icon-chevons-down.svg" />
     </button>
   );

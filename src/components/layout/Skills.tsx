@@ -14,11 +14,7 @@ export function Skills() {
             <h4 className={styles.content_title}>Language</h4>
             <div>
               {Object.keys(SKILLS.LANGUAGE).map((key) => (
-                <ProgressInput
-                  key={key}
-                  name={SKILLS.LANGUAGE[key].NAME}
-                  percent={SKILLS.LANGUAGE[key].PROGRESS}
-                />
+                <ProgressInput key={key} name={SKILLS.LANGUAGE[key].NAME} percent={SKILLS.LANGUAGE[key].PROGRESS} />
               ))}
             </div>
           </div>
@@ -26,11 +22,7 @@ export function Skills() {
             <h4 className={styles.content_title}>Framework</h4>
             <div>
               {Object.keys(SKILLS.FRAMEWORK).map((key) => (
-                <ProgressInput
-                  key={key}
-                  name={SKILLS.FRAMEWORK[key].NAME}
-                  percent={SKILLS.FRAMEWORK[key].PROGRESS}
-                />
+                <ProgressInput key={key} name={SKILLS.FRAMEWORK[key].NAME} percent={SKILLS.FRAMEWORK[key].PROGRESS} />
               ))}
             </div>
           </div>

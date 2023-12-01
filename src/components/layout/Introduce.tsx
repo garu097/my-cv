@@ -1,9 +1,5 @@
 import { TypeAnimation } from "react-type-animation";
-import {
-  LIST_ITEM_NAVBAR,
-  PARAGRAPH_INTRODUCE,
-  TEXT_INTRODUCE_SEQUENCE,
-} from "@/src/constant";
+import { LIST_ITEM_NAVBAR, PARAGRAPH_INTRODUCE, TEXT_INTRODUCE_SEQUENCE } from "@/src/constant";
 import styles from "@/src/styles/layout/introduce.module.css";
 import { PulsatingAvatar } from "../common/PulsatingAvatar";
 import clsx from "clsx";

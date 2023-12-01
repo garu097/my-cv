@@ -1,7 +1,4 @@
-import {
-  VerticalTimeline,
-  VerticalTimelineElement,
-} from "react-vertical-timeline-component";
+import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import styles from "@/src/styles/common/timeline.module.css";
 import { ITimeLine } from "@/src/constant/type";
@@ -27,14 +24,8 @@ export function Timeline(props: Props) {
             backgroundSize: "contain",
           }}
         >
-          <h3 className={`vertical-timeline-element-title ${styles.title}`}>
-            {timeline.title}
-          </h3>
-          <h4
-            className={`vertical-timeline-element-subtitle ${styles.subtitle}`}
-          >
-            {timeline.subTitle}
-          </h4>
+          <h3 className={`vertical-timeline-element-title ${styles.title}`}>{timeline.title}</h3>
+          <h4 className={`vertical-timeline-element-subtitle ${styles.subtitle}`}>{timeline.subTitle}</h4>
           <p className={styles.paragraph}>{timeline.paragraph}</p>
         </VerticalTimelineElement>
       ))}
