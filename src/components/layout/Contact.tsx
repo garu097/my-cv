@@ -78,7 +78,7 @@ export function Contact() {
       }
 
       const response = await fetch(
-        "https://formsubmit.co/ajax/garu097test@gmail.com",
+        "https://formsubmit.co/ajax/garu097tech@gmail.com",
         {
           method: "POST",
           body: formData,
