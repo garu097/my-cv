@@ -1,12 +1,6 @@
 import clsx from "clsx";
 import styles from "@/src/styles/layout/about.module.css";
-import {
-  FAVOURITE,
-  LIST_EDUCATION,
-  LIST_EXPERIENCE,
-  LIST_ITEM_NAVBAR,
-  SIZE_ICON,
-} from "@/src/constant";
+import { FAVOURITE, LIST_EDUCATION, LIST_EXPERIENCE, LIST_ITEM_NAVBAR, SIZE_ICON } from "@/src/constant";
 import { Timeline } from "../common/Timeline";
 import helper from "@/src/utils/helper";
 import { Fade } from "react-awesome-reveal";
@@ -31,16 +25,12 @@ export function About() {
 
       {/* favourite */}
       <Fade className={styles.content_section}>
-        <div
-          className={clsx(styles.content_container, styles.content_favourite)}
-        >
+        <div className={clsx(styles.content_container, styles.content_favourite)}>
           <h4 className={styles.content_title}>Favourite</h4>
           <div className={styles.favourite_container}>
             {Object.keys(FAVOURITE).map((key) => (
               <div key={key} className={styles.favourite_item}>
-                <h4 className={styles.favourite_title}>
-                  {helper.capitalizeFirstLetter(key)}
-                </h4>
+                <h4 className={styles.favourite_title}>{helper.capitalizeFirstLetter(key)}</h4>
                 <img
                   alt={key}
                   style={{

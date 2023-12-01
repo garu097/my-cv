@@ -16,11 +16,7 @@ export default function ProgressInput(props: Props) {
             cx="80"
             cy="80"
             r="70"
-            className={clsx(
-              styles.progressbar__svg_circle,
-              styles.circle,
-              styles.shadow,
-            )}
+            className={clsx(styles.progressbar__svg_circle, styles.circle, styles.shadow)}
             initial={{
               strokeDashoffset: 440,
             }}
@@ -31,11 +27,7 @@ export default function ProgressInput(props: Props) {
         <p className={clsx(styles.progressbar__text, styles.shadow)}>
           {props.name}
           <br />
-          <motion.span
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1.2 }}
-          >
+          <motion.span initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1.2 }}>
             {props.percent}%
           </motion.span>
         </p>
