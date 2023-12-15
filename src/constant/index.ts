@@ -61,7 +61,7 @@ export const SKILLS = {
     },
     CSS: {
       NAME: "CSS",
-      PROGRESS: 95,
+      PROGRESS: 100,
     },
     JAVASCRIPT: {
       NAME: "Javascript",
@@ -73,60 +73,139 @@ export const SKILLS = {
     },
     SQL: {
       NAME: "SQL",
-      PROGRESS: 80,
+      PROGRESS: 95,
     },
   },
   FRAMEWORK: {
-    VUEJS: {
-      NAME: "VueJs",
+    NESTJS: {
+      NAME: "NestJs",
       PROGRESS: 100,
     },
     REACTJS: {
       NAME: "ReactJs",
-      PROGRESS: 80,
+      PROGRESS: 100,
+    },
+    VUEJS: {
+      NAME: "VueJs",
+      PROGRESS: 100,
     },
     NEXTJS: {
       NAME: "NextJS",
-      PROGRESS: 80,
+      PROGRESS: 95,
     },
     DJANGO: {
       NAME: "Django",
       PROGRESS: 80,
     },
-    NESTJS: {
-      NAME: "NestJs",
-      PROGRESS: 70,
-    },
   },
 };
 
 // education
-export const LIST_EDUCATION: ITimeLine[] = [
+export const LIST_TIMELINE: ITimeLine[] = [
   {
     title: "Hanoi University of Science and Technology",
     date: "September 2016 - April 2021",
     subTitle: "Bachelor's Degree - Telecommunication electronic engineering",
     paragraph: "Studies included understanding of different algorithms and their implementation in practice.",
-    iconURL: "https://upload.wikimedia.org/wikipedia/commons/a/a1/Logo_Hust.png",
+    iconURL: "/images/png/HUST.png",
   },
   {
     title: "Korean IT School",
     date: "April 2021 - November 2021",
-    subTitle: "Web",
+    subTitle: "Training and improve knowledge software",
     paragraph: "Studies included fundamental programing software. Also an emphasis on algorithm",
-    iconURL:
-      "https://scontent.fhan2-1.fna.fbcdn.net/v/t1.6435-9/131303306_189965539427056_2614003248938763863_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=hRY0vuVxz0wAX_yQmuW&tn=j4CxX_qJ4TlXOnFb&_nc_ht=scontent.fhan2-1.fna&oh=00_AT-AcP8ozMa8mQDZ4HIXzpLwyRFI2fV_YPBCm_qkmhpKZQ&oe=636D6440",
+    iconURL: "/images/jpeg/KITS.jpeg",
+  },
+  {
+    title: "Ycomm VN (Tripath)",
+    subTitle: "Developer",
+    date: "August 2021 - present",
+    iconURL: "/images/png/YCOMM.png",
+    paragraph:
+      "Works with socket, video call, blockchain,...  emphasis on NestJs, NextJs, Nuxt3, Vuejs, Typescript based solutions.",
   },
 ];
 
-export const LIST_EXPERIENCE: ITimeLine[] = [
+export const LIST_PROJECT: ITimeLine[] = [
   {
-    title: "Tripath",
-    date: "August 2021 - present",
-    iconURL:
-      "https://itviec.com/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBNFE2REE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--fabfcb5d72113912417b49717a78bfdcc4990a5e/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2wzWldKd09oSnlaWE5wZW1WZmRHOWZabWwwV3dkcEFhb3ciLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--a364054a300021d6ece7f71365132a9777e89a21/tripath-vietnam-logo.png",
+    title: "Watermark Invisible",
+    date: "August 2023 - November 2023",
+    iconURL: "/images/jpeg/Hyundai.jpg",
     paragraph:
-      "Front-end web development works with socket, video call, blockchain,...  emphasis on Nuxt3, Vuejs, Typescript based solutions.",
+      "- Introduction: Protect your digital content with ease using watermark. Whether you're a photographer, content creator, or just want to secure your images,  \n" +
+      "- Client: Kenaz\n" +
+      "- Developed: Build an platform draw text and logo visible and invisible as watermark to images \n" +
+      "- Team size: 3\n" +
+      "- Position and Technologies used: Backend NestJs",
+    encloseURL: "https://play.google.com/store/apps/details?id=com.moykomiks.webtoon&hl=vi&gl=US",
+  },
+  {
+    title: "MStoryLink",
+    date: "December 2022 - July 2023",
+    iconURL: "/images/svg/MStoryLink.svg",
+    paragraph:
+      "- Introduction: Immerse yourself in the best comics with access to a vast comic store with thousands of titles. Readers can enjoy comics both online and offline, from any location. The auto-scrolling feature and multiple speed options will bring a completely new advanced reading experience.\n" +
+      "- Client: Gamer Republic & Ycomm\n" +
+      "- Developed: Build app mobile read comics online and offline, auto-scrolling feature, adjust reading mode. \n" +
+      "- Team size: 3\n" +
+      "- Position and Technologies used: Front-end, React Native, IOS native, Android native",
+    encloseURL: "https://play.google.com/store/apps/details?id=com.moykomiks.webtoon&hl=vi&gl=US",
+  },
+  {
+    title: "Statup GG",
+    date: "December 2021 - March 2023",
+    iconURL: "/images/svg/Statupgg.svg",
+    paragraph:
+      "- Introduction: An initiative developing a virtual assistant desktop application that offers valuable analyses and real-time AI voice coaching to enhance the win rate of League of Legends players during their gameplay.\n" +
+      "- Client: Gamer Republic & Tripath\n" +
+      "- Developed: wrote Vuejs to implement front-end and feature in game on desktop app\n" +
+      "- Team size: 8\n" +
+      "- Position and Technologies used:Front-end, Nuxt3Js, VueS, ElectronJS",
+    encloseURL: "https://download.statup.gg/en",
+  },
+  {
+    title: "Shilla",
+    date: "June 2022 - December 2022",
+    iconURL: "/images/png/Shilla.png",
+    paragraph:
+      "- Introduction: A consulting system for Shilla duty-free shops' website in Korea enables users to schedule appointments with consultants, engage in real-time chat or video calls, and seamlessly share product information during consultations. \n" +
+      "- Client: The Shilla Duty Free\n" +
+      "- Developed: Build consulting system, consulting real-time, video consultation using Amazon Chime SDK, Vuejs  \n" +
+      "- Team size: 5\n" +
+      "- Position and Technologies used:Front-end, VueJS, NuxtJS",
+    encloseURL: "https://play.google.com/store/apps/details?id=com.shilladutyfree&hl=vi-VN",
+  },
+  {
+    title: "Nft-Blockchain",
+    date: "March 2022 - June 2022",
+    iconURL: "/images/png/NFTBox.png",
+    paragraph:
+      "- Introduction: An web application trading NFT on multiple network (Ethereum, Matic, etc...) \n" +
+      "- Client: Tripath\n" +
+      "- Developed: wrote the NFT token as a smart contract and integrated to web application for trading use Vuejs \n" +
+      "- Team size: 5\n" +
+      "- Position and Technologies used:Front-end, Solidarity ,Nuxt3Js, VueS",
+    encloseURL: "https://download.statup.gg/en",
+  },
+  {
+    title: "School",
+    date: "August 2021 - November 2021",
+    iconURL: "/images/png/LogoSchool.png",
+    paragraph:
+      "- Introduction: School E-learning buying course online for students\n" +
+      "- Client: Tripath\n" +
+      "- Developed: Implemented web application using Vuejs \n" +
+      "- Team size: 2\n" +
+      "- Position and Technologies used:Front-end, Nuxt3Js, VueS",
+    encloseURL: "https://schools.vn",
+  },
+  {
+    title: "Discord Bot",
+    subTitle: "Personal project",
+    date: "May 2022",
+    iconURL: "/images/png/discord.png",
+    paragraph: "Create the bot manage music player on my discord sever",
+    encloseURL: "https://github.com/garu097/cook-bot-discord",
   },
 ];
 

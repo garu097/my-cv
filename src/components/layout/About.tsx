@@ -1,6 +1,6 @@
 import clsx from "clsx";
 import styles from "@/src/styles/layout/about.module.css";
-import { FAVOURITE, LIST_EDUCATION, LIST_EXPERIENCE, LIST_ITEM_NAVBAR, SIZE_ICON } from "@/src/constant";
+import { FAVOURITE, LIST_TIMELINE, LIST_PROJECT, LIST_ITEM_NAVBAR, SIZE_ICON } from "@/src/constant";
 import { Timeline } from "../common/Timeline";
 import helper from "@/src/utils/helper";
 import { Fade } from "react-awesome-reveal";
@@ -13,12 +13,12 @@ export function About() {
       <Fade>
         <div className={styles.content_section}>
           <div className={styles.content_container}>
-            <h4 className={styles.content_title}>Education</h4>
-            <Timeline listTimeLine={LIST_EDUCATION} />
+            <h4 className={styles.content_title}>Career</h4>
+            <Timeline listTimeLine={LIST_TIMELINE} />
           </div>
           <div className={styles.content_container}>
-            <h4 className={styles.content_title}>Experience</h4>
-            <Timeline listTimeLine={LIST_EXPERIENCE} />
+            <h4 className={styles.content_title}>Project</h4>
+            <Timeline listTimeLine={LIST_PROJECT} />
           </div>
         </div>
       </Fade>

@@ -3,6 +3,7 @@ export type ITimeLine = {
   subTitle?: string;
   contentStyle?: any;
   contentArrowStyle?: any;
+  encloseURL?: string;
   iconURL?: string;
   icon?: string;
   date: string;

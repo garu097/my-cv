@@ -27,6 +27,9 @@ export function Timeline(props: Props) {
           <h3 className={`vertical-timeline-element-title ${styles.title}`}>{timeline.title}</h3>
           <h4 className={`vertical-timeline-element-subtitle ${styles.subtitle}`}>{timeline.subTitle}</h4>
           <p className={styles.paragraph}>{timeline.paragraph}</p>
+          <a href={timeline.encloseURL} className={styles.enclose}>
+            {timeline.encloseURL}
+          </a>
         </VerticalTimelineElement>
       ))}
     </VerticalTimeline>
