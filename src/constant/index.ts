@@ -130,7 +130,7 @@ export const LIST_PROJECT: ITimeLine[] = [
   {
     title: "Watermark Invisible",
     date: "August 2023 - November 2023",
-    iconURL: "/images/jpeg/Hyundai.jpg",
+    iconURL: "/images/jpeg/Kenaz.png",
     paragraph:
       "- Introduction: Protect your digital content with ease using watermark. Whether you're a photographer, content creator, or just want to secure your images,  \n" +
       "- Client: Kenaz\n" +
