@@ -16,6 +16,7 @@
 
 .enclose {
     color: var(--blue);
+    word-break: break-all;
     font-size: 15px;
 }
 
