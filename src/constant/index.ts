@@ -130,14 +130,14 @@ export const LIST_PROJECT: ITimeLine[] = [
   {
     title: "Watermark Invisible",
     date: "August 2023 - November 2023",
-    iconURL: "/images/jpeg/Kenaz.png",
+    iconURL: "/images/png/Kenaz.png",
     paragraph:
       "- Introduction: Protect your digital content with ease using watermark. Whether you're a photographer, content creator, or just want to secure your images,  \n" +
       "- Client: Kenaz\n" +
       "- Developed: Build an platform draw text and logo visible and invisible as watermark to images \n" +
       "- Team size: 3\n" +
       "- Position and Technologies used: Backend NestJs",
-    encloseURL: "https://play.google.com/store/apps/details?id=com.moykomiks.webtoon&hl=vi&gl=US",
+    encloseURL: "http://wm.itoon.kr/vi",
   },
   {
     title: "MStoryLink",
@@ -185,7 +185,6 @@ export const LIST_PROJECT: ITimeLine[] = [
       "- Developed: wrote the NFT token as a smart contract and integrated to web application for trading use Vuejs \n" +
       "- Team size: 5\n" +
       "- Position and Technologies used:Front-end, Solidarity ,Nuxt3Js, VueS",
-    encloseURL: "https://download.statup.gg/en",
   },
   {
     title: "School",
@@ -203,7 +202,7 @@ export const LIST_PROJECT: ITimeLine[] = [
     title: "Discord Bot",
     subTitle: "Personal project",
     date: "May 2022",
-    iconURL: "/images/png/discord.png",
+    iconURL: "/images/png/Discord.png",
     paragraph: "Create the bot manage music player on my discord sever",
     encloseURL: "https://github.com/garu097/cook-bot-discord",
   },
