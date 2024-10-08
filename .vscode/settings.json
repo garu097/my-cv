@@ -14,10 +14,10 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "editor.codeActionsOnSave": {
-    "source.organizeImports": false,
-    "source.fixAll.tslint": false,
-    "source.fixAll.eslint": true,
-    "eslint.autoFixOnSave": true
+    "source.organizeImports": "never",
+    "source.fixAll.tslint": "never",
+    "source.fixAll.eslint": "explicit",
+    "eslint.autoFixOnSave": "explicit"
   },
   "eslint.validate": [
     "javascript",
